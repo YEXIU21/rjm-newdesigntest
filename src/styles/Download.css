@@ -1,0 +1,439 @@
+.download-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: var(--text-primary);
+  position: relative;
+}
+
+.download-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.download-icon {
+  font-size: 48px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.download-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.download-header p {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+/* Unified download section */
+.download-unified {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.download-card.unified {
+  background-color: var(--background-medium);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--tertiary);
+}
+
+.download-card.unified:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.platform-icon.unified {
+  font-size: 64px;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.unified-button {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+.unified-button:hover:not(:disabled) {
+  background-color: var(--primary-dark, #4338ca);
+}
+
+.unified-button.installing {
+  background-color: var(--primary-dark, #4338ca);
+  position: relative;
+}
+
+.success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  color: #2ecc71;
+  font-weight: 500;
+  gap: 8px;
+}
+
+.browser-support-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  gap: 8px;
+}
+
+/* Device info section */
+.device-info-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.device-info-card {
+  background-color: var(--background-medium);
+  border-radius: var(--radius-lg);
+  padding: 25px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--tertiary);
+}
+
+.device-info-card h3 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.device-info-content {
+  text-align: left;
+}
+
+.device-info-content p {
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Original styles */
+.download-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.download-card {
+  background-color: var(--background-medium);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--tertiary);
+}
+
+.download-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.platform-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.platform-icon.android {
+  color: #3DDC84;
+}
+
+.platform-icon.ios {
+  color: #A2AAAD;
+}
+
+.download-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.download-card p {
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+}
+
+.download-button {
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button-icon {
+  margin-right: 8px;
+}
+
+.android-button {
+  background-color: #3DDC84;
+  color: #000000;
+}
+
+.android-button:hover:not(:disabled) {
+  background-color: #32b76e;
+}
+
+.ios-button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.ios-button:hover:not(:disabled) {
+  background-color: #333333;
+}
+
+.download-instructions {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--background-dark);
+  padding: 15px;
+  border-radius: var(--radius-md);
+  text-align: left;
+}
+
+.info-icon {
+  color: var(--primary);
+}
+
+.download-instructions p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.download-benefits {
+  background-color: var(--background-medium);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  border: 1px solid var(--tertiary);
+  margin-bottom: 30px;
+}
+
+.download-benefits h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.download-benefits ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding-left: 20px;
+}
+
+.download-benefits li {
+  font-size: 16px;
+  color: var(--text-secondary);
+  padding: 5px 0;
+}
+
+/* Installation status and instructions */
+.install-status {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.install-status p {
+  margin: 5px 0;
+}
+
+.status-icon {
+  margin-bottom: 10px;
+}
+
+.install-status.success {
+  background-color: rgba(46, 204, 113, 0.1);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+  color: #2ecc71;
+}
+
+.install-status.info {
+  background-color: rgba(52, 152, 219, 0.1);
+  border: 1px solid rgba(52, 152, 219, 0.3);
+  color: #3498db;
+}
+
+.install-status.warning {
+  background-color: rgba(241, 196, 15, 0.1);
+  border: 1px solid rgba(241, 196, 15, 0.3);
+  color: #f1c40f;
+}
+
+.install-instructions-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.install-instructions-content {
+  background-color: var(--background-medium);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--tertiary);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.install-instructions-content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.steps-container {
+  margin-bottom: 25px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.step-number {
+  background-color: var(--primary);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.step p {
+  margin: 0;
+  padding-top: 5px;
+  color: var(--text-primary);
+}
+
+.ok-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ok-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.ios-share-icon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.ios-note {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--background-dark);
+  padding: 15px;
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.ios-note p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .device-info-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .device-info-card {
+    max-width: 100%;
+  }
+  
+  .download-card.unified {
+    max-width: 100%;
+  }
+  
+  .download-header {
+    padding: 0 10px;
+  }
+  
+  .download-icon {
+    font-size: 40px;
+  }
+  
+  .download-header h1 {
+    font-size: 28px;
+  }
+}

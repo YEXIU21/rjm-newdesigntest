@@ -1,0 +1,229 @@
+.consent-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.consent-popup {
+  background-color: #1a1c26;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e0e0e0;
+}
+
+.consent-logo {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.consent-text {
+  color: #e0e0e0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.consent-link {
+  color: #6050ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.consent-link:hover {
+  text-decoration: underline;
+}
+
+.consent-checklist {
+  background-color: #21262d;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.consent-item {
+  margin-bottom: 15px;
+}
+
+.consent-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Checkbox styling */
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  color: #e0e0e0;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid #888;
+  border-radius: 50%;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  border-color: #aaa;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  border-color: #6050ff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #6050ff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-label {
+  line-height: 1.5;
+  display: inline-block;
+  padding-top: 1px;
+}
+
+.consent-actions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.consent-proceed {
+  background-color: #5047e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.consent-proceed:hover:not(.disabled) {
+  background-color: #6258f0;
+}
+
+.consent-proceed.disabled {
+  background-color: #333;
+  cursor: not-allowed;
+  color: #777;
+}
+
+.consent-exit {
+  background-color: transparent;
+  color: #999;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.consent-exit:hover {
+  color: #ccc;
+}
+
+.consent-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.consent-regulator {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.regulator-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regulator-badge.pagcor {
+  background-color: transparent;
+}
+
+.pagcor-logo {
+  width: 100px;
+  height: 45px;
+}
+
+.regulator-badge.age {
+  background-color: #c10001;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .consent-popup {
+    padding: 20px;
+    width: 95%;
+  }
+  
+  .consent-checklist {
+    padding: 15px;
+  }
+  
+  .checkbox-label {
+    font-size: 13px;
+  }
+} 

@@ -1,0 +1,113 @@
+.promotions-page {
+  padding-bottom: 40px;
+}
+
+.promotions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.promo-card {
+  background-color: #161b22;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.promo-image-container {
+  position: relative;
+}
+
+.promo-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.promo-category {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  background-color: rgba(80, 71, 229, 0.9);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.promo-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.promo-title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #f0f6fc;
+}
+
+.promo-description {
+  color: #8b949e;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.promo-expiry {
+  color: #e05f5f;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.promo-claim-btn {
+  align-self: flex-start;
+}
+
+.promo-terms {
+  background-color: #161b22;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.promo-terms h3 {
+  font-size: 1.2rem;
+  color: #f0f6fc;
+  margin-bottom: 15px;
+}
+
+.promo-terms p {
+  color: #8b949e;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.promo-terms ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  color: #8b949e;
+}
+
+.promo-terms li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .promotions-grid {
+    grid-template-columns: 1fr;
+  }
+} 

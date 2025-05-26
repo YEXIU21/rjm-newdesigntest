@@ -1,0 +1,143 @@
+.reports-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.reports-paper {
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.reports-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.reports-icon {
+  font-size: 2.5rem;
+  color: var(--primary, #5047e5);
+  margin-right: 15px;
+}
+
+.reports-title {
+  color: var(--primary, #5047e5);
+  margin: 0;
+}
+
+.report-filters {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--background-medium, #161b22);
+  border-radius: 12px;
+}
+
+.export-button {
+  height: 56px;
+  background-color: var(--primary, #5047e5);
+}
+
+.report-tabs-container {
+  margin-top: 20px;
+}
+
+.report-tabs {
+  margin-bottom: 20px;
+}
+
+.summary-cards {
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+}
+
+.summary-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 15px 0;
+  color: var(--text-primary, #e6edf3);
+}
+
+.summary-value.positive {
+  color: var(--success, #2ea043);
+}
+
+.summary-value.negative {
+  color: var(--error, #ff4757);
+}
+
+.summary-details {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-muted, #8b949e);
+}
+
+.trend-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 0.2;
+  font-size: 2.5rem;
+}
+
+.trend-icon.positive {
+  color: var(--success, #2ea043);
+}
+
+.trend-icon.negative {
+  color: var(--error, #ff4757);
+}
+
+.section-title {
+  margin: 30px 0 20px;
+  color: var(--text-primary, #e6edf3);
+  font-weight: 600;
+}
+
+.data-table {
+  margin-bottom: 30px;
+}
+
+.amount-positive {
+  color: var(--success, #2ea043);
+}
+
+.amount-negative {
+  color: var(--error, #ff4757);
+}
+
+.game-filter {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .reports-paper {
+    padding: 20px;
+  }
+  
+  .reports-container {
+    padding: 0 10px;
+  }
+  
+  .summary-value {
+    font-size: 1.8rem;
+  }
+  
+  .trend-icon {
+    font-size: 2rem;
+    top: 15px;
+    right: 15px;
+  }
+} 

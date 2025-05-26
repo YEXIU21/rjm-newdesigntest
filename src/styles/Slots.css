@@ -1,0 +1,289 @@
+.slots-page {
+  padding-bottom: 40px;
+}
+
+.slots-banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.slots-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slots-banner .banner-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+}
+
+.slots-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.slots-banner p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-page-header {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: #f0f6fc;
+  margin-bottom: 10px;
+}
+
+.page-description {
+  color: #8b949e;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+.slots-providers {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.slots-providers span {
+  color: #c9d1d9;
+  font-weight: 500;
+}
+
+.provider-select {
+  padding: 8px 15px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  color: #c9d1d9;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.provider-select:focus {
+  border-color: #5047e5;
+}
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.category-tab {
+  padding: 8px 16px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  color: #c9d1d9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+  background-color: #21262d;
+}
+
+.category-tab.active {
+  background-color: #5047e5;
+  border-color: #5047e5;
+  color: white;
+}
+
+.slots-container {
+  margin-top: 20px;
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.game-card {
+  background-color: #21262d;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.game-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.game-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-image {
+  transform: scale(1.05);
+}
+
+.game-badge {
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.game-badge.new {
+  top: 10px;
+  left: 10px;
+  background-color: #238636;
+  color: white;
+}
+
+.game-badge.jackpot {
+  top: 10px;
+  right: 10px;
+  background-color: #e05f5f;
+  color: white;
+}
+
+.game-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.game-card:hover .game-overlay {
+  opacity: 1;
+}
+
+.play-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: var(--primary, #5047e5);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.play-btn:hover {
+  background-color: var(--primary-hover, #6258f0);
+}
+
+.demo-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  border: 1px solid #c9d1d9;
+  color: #c9d1d9;
+}
+
+.demo-btn:hover {
+  background-color: rgba(201, 209, 217, 0.1);
+}
+
+.game-info {
+  padding: 15px;
+}
+
+.game-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #e6edf3;
+}
+
+.game-provider {
+  font-size: 0.8rem;
+  color: #8b949e;
+}
+
+@media (max-width: 768px) {
+  .slots-banner {
+    height: 200px;
+    display: none;
+  }
+  
+  .mobile-page-header {
+    display: block;
+  }
+  
+  .slots-banner .banner-content {
+    padding: 20px;
+  }
+  
+  .slots-banner h1 {
+    font-size: 1.8rem;
+  }
+  
+  .slots-banner p {
+    font-size: 0.9rem;
+  }
+
+  .category-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .category-tab {
+    white-space: nowrap;
+  }
+
+  .slots-providers {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .provider-select {
+    width: 100%;
+  }
+
+  .slots-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+} 

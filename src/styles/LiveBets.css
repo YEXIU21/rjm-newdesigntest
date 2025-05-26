@@ -1,0 +1,120 @@
+.live-bets-container {
+  background-color: #161822;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+}
+
+.live-bets-title {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.live-bets-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.live-bets-header {
+  display: flex;
+  background-color: #21262d;
+  border-radius: 4px;
+  padding: 10px 0;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.live-bets-cell {
+  padding: 10px;
+}
+
+.game-cell {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.wager-cell {
+  flex: 1;
+  text-align: right;
+}
+
+.win-cell {
+  flex: 1;
+  text-align: right;
+}
+
+.live-bets-body {
+  margin-top: 5px;
+}
+
+.live-bets-row {
+  display: flex;
+  border-bottom: 1px solid #30363d;
+  padding: 10px 0;
+}
+
+.live-bets-row:last-child {
+  border-bottom: none;
+}
+
+.game-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #21262d;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-name {
+  font-weight: 500;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.user-name {
+  font-size: 12px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.positive-win {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.zero-win {
+  color: #f44336;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .live-bets-container {
+    padding: 15px;
+  }
+  
+  .game-name {
+    font-size: 13px;
+  }
+  
+  .user-name {
+    font-size: 11px;
+  }
+  
+  .live-bets-cell {
+    padding: 8px;
+  }
+} 

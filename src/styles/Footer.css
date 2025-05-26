@@ -1,0 +1,240 @@
+.footer {
+  background-color: var(--background-dark);
+  color: var(--text-muted);
+  padding: 60px 0 30px;
+  border-top: 1px solid var(--border-color);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary) 0%, var(--primary-hover) 100%);
+  opacity: 0.7;
+}
+
+.footer-container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+  padding-right: 20px;
+}
+
+.footer-heading {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-heading:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 1px;
+  transition: var(--transition);
+}
+
+.footer-section:hover .footer-heading:after {
+  width: 100%;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 14px;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+  position: relative;
+}
+
+.footer-links a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--primary);
+  transition: var(--transition);
+  opacity: 0;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+  transform: translateX(5px);
+}
+
+.footer-links a:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.footer-icon {
+  margin-right: 10px;
+  font-size: 1.1rem;
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.footer-links a:hover .footer-icon {
+  transform: scale(1.2);
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.social-icon {
+  font-size: 1.6rem;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.contact-info p {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 12px;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--tertiary);
+  padding-top: 30px;
+}
+
+.payment-methods {
+  margin-bottom: 30px;
+}
+
+.payment-methods h4 {
+  display: flex;
+  align-items: center;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.payment-icon {
+  margin-right: 10px;
+  color: var(--primary);
+}
+
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.payment-icons .payment-icon {
+  background-color: var(--secondary);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  transition: var(--transition);
+  border: 1px solid var(--tertiary);
+}
+
+.payment-icons .payment-icon:hover {
+  background-color: var(--tertiary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.footer-disclaimer {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.footer-disclaimer p {
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 30px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  .footer-section {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  
+  .footer-heading:after {
+    width: 30px;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .payment-icons {
+    justify-content: center;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+  }
+  
+  .payment-methods h4 {
+    justify-content: center;
+  }
+} 

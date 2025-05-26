@@ -1,0 +1,200 @@
+.wallet-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.wallet-paper {
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.wallet-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.wallet-icon {
+  font-size: 2.5rem;
+  color: var(--primary, #5047e5);
+  margin-right: 15px;
+}
+
+.wallet-title {
+  color: var(--primary, #5047e5);
+  margin: 0;
+}
+
+.balance-section {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--background-light, #21262d);
+  border-radius: 12px;
+}
+
+.balance-amount {
+  color: var(--text-primary, #e6edf3);
+  margin: 10px 0 20px;
+  font-weight: 700;
+}
+
+.balance-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.deposit-button {
+  background-color: var(--success, #2ea043);
+}
+
+.deposit-button:hover {
+  background-color: var(--success-dark, #238636);
+}
+
+.withdraw-button {
+  border-color: var(--warning, #f85149);
+  color: var(--warning, #f85149);
+}
+
+.withdraw-button:hover {
+  background-color: rgba(248, 81, 73, 0.1);
+}
+
+.wallet-tabs-container {
+  margin-top: 20px;
+}
+
+.wallet-tabs {
+  margin-bottom: 20px;
+}
+
+.success-alert {
+  margin-bottom: 20px;
+}
+
+.crypto-address-card, 
+.payment-info-card {
+  margin: 20px 0;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-dark, #0d1117);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.crypto-address {
+  flex: 1;
+  word-break: break-all;
+  font-family: monospace;
+}
+
+.copy-button {
+  margin-left: 10px;
+}
+
+.currency-symbol {
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.action-button {
+  margin-top: 20px;
+}
+
+.transactions-list {
+  margin: 20px 0;
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.transaction-icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.deposit-icon {
+  color: var(--success, #2ea043);
+}
+
+.withdraw-icon {
+  color: var(--warning, #f85149);
+}
+
+.transaction-details {
+  flex: 1;
+}
+
+.transaction-amount {
+  text-align: right;
+}
+
+.amount-positive {
+  color: var(--success, #2ea043);
+}
+
+.amount-negative {
+  color: var(--warning, #f85149);
+}
+
+.status-completed {
+  color: var(--success, #2ea043);
+}
+
+.status-pending {
+  color: var(--warning, #f85149);
+}
+
+.view-all-button {
+  margin-top: 20px;
+}
+
+.no-transactions {
+  text-align: center;
+  padding: 30px;
+  color: var(--text-muted, #8b949e);
+}
+
+@media (max-width: 768px) {
+  .wallet-paper {
+    padding: 20px;
+  }
+  
+  .wallet-container {
+    padding: 0 10px;
+  }
+  
+  .balance-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .transaction-item {
+    flex-wrap: wrap;
+  }
+  
+  .transaction-amount {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 55px;
+  }
+} 
