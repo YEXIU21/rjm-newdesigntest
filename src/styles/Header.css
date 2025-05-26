@@ -219,7 +219,7 @@
 .account-link {
   background: linear-gradient(135deg, #2d2b42, #1e1e2d);
   border: 2px solid rgba(80, 71, 229, 0.3);
-  overflow: hidden;
+  position: relative;
 }
 
 .profile-icon-wrapper {
@@ -239,13 +239,13 @@
 
 .account-link .status-indicator {
   position: absolute;
-  bottom: -4px;
-  right: -4px;
-  width: 12px;
-  height: 12px;
+  bottom: -3px;
+  right: -3px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   border: 2px solid var(--background-dark);
-  z-index: 2;
+  z-index: 5;
 }
 
 .account-link .status-indicator.online {
